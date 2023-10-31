@@ -2,8 +2,19 @@ function tocaSomPom () {
    document.querySelector('#som_tecla_pom').play();
 
 }
- document.querySelector('.tecla_pom').onclick = tocaSomPom;
+  cy
+
+ const listaDeTeclas = document.querySelectorAll('.tecla');
 
 
- //o que é uma constante...
- const ListaDeTeclas = document.querySelectorAll('.tecla')
+ let contador = 0;
+
+
+ while (contador <9) {
+
+  listaDeTeclas[contador].onclick = tocaSomPom;
+  contador = contador +1;
+  console.long(contador);
+
+
+ }
